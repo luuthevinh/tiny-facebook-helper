@@ -1,0 +1,32 @@
+{
+    "name": "Tiny Facebook Hepler",
+    "version": "1.0",
+    "description": "Facebook extension help to hide comments, prevent float up/down in newsfeed.",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.facebook.com/*"
+            ],
+            "css": [
+                "css/main.css"
+            ],
+            "js": [
+                "js/jquery-3.3.1.min.js",
+                "js/ResizeSensor.js",
+                "js/main.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}

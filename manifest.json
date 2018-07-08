@@ -28,5 +28,11 @@
             ],
             "run_at": "document_idle"
         }
-    ]
+    ],
+    "icons": {
+        "16": "images/magic-wand.png",
+        "32": "images/magic-wand.png",
+        "48": "images/magic-wand.png",
+        "128": "images/magic-wand.png"
+    }
 }
